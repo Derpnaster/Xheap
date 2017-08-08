@@ -1,0 +1,26 @@
+<h1>Welcome to the Neumont Heap</h1>
+<div class="container">
+  <p>
+    We're still in development, but feel free to look around
+
+  </p>
+</div>
+  <div class="container">
+    <% @questions.each do |q| %>
+    <div class="media">
+      <div class="lead well">
+        <div class="media-left media-top">
+      <img class="media-object" src= <%= q.gravatar %>
+
+        <div class="media-body">
+          <h4 class="media-heading"><%= q.username%> asked:</h4>
+          <div><%=time_ago_in_words q.created_at %> ago</div>
+          <%= q.body%>
+        </div>
+      </div>
+      </div>
+        <button> <a href="<%= question_path(q)%>">View Answers</a> </button>
+    <%end%>
+  </div>
+  </div>
+

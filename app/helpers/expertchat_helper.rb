@@ -1,0 +1,2 @@
+module ExpertchatHelper
+end
