@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170814213900) do
+ActiveRecord::Schema.define(version: 20170816221348) do
 
   create_table "answers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
@@ -23,24 +23,10 @@ ActiveRecord::Schema.define(version: 20170814213900) do
     t.index ["user_id"], name: "index_answers_on_user_id", using: :btree
   end
 
-  create_table "conversations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "author_id"
-    t.integer  "receiver_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["author_id"], name: "index_conversations_on_author_id", using: :btree
-    t.index ["receiver_id"], name: "index_conversations_on_receiver_id", using: :btree
-  end
-
-
-  create_table "personal_messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.text     "body",            limit: 65535
-    t.integer  "conversation_id"
-    t.integer  "user_id"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
-    t.index ["conversation_id"], name: "index_personal_messages_on_conversation_id", using: :btree
-    t.index ["user_id"], name: "index_personal_messages_on_user_id", using: :btree
+  create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.text     "content",    limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "questions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -71,6 +57,4 @@ ActiveRecord::Schema.define(version: 20170814213900) do
     t.boolean  "guest"
   end
 
-  add_foreign_key "personal_messages", "conversations"
-  add_foreign_key "personal_messages", "users"
 end

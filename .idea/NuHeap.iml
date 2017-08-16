@@ -32,6 +32,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v5.0.5, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v5.0.5, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v5.0.5, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.5.1, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v7.1.4, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v7.1.2.4, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.11, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
@@ -44,11 +45,19 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.0.5, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cookiejar (v0.3.3, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="daemons (v1.2.4, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.3.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="em-http-request (v1.1.5, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="em-socksify (v0.3.1, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.2.5, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faye (v1.2.4, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faye-websocket (v0.10.7, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.18, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http_parser.rb (v0.6.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.8.6, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.7.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.1, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
@@ -64,6 +73,8 @@
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.1.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="private_pub (v1.0.3, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v2.0.5, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.9.1, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.3, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
@@ -81,6 +92,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.6, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.1, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.0, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thin (v1.7.2, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.4, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.8, RVM: ruby-2.3.1 [rails_sandbox]) [gem]" level="application" />
