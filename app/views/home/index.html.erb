@@ -10,7 +10,7 @@
     <div class="media">
       <div class="lead well">
         <div class="media-left media-top">
-      <img class="media-object" src= <%= q.gravatar %>
+      <img class="media-object" src= "<%= q.gravatar %>" >
 
         <div class="media-body">
           <h4 class="media-heading"><%= q.username%> asked:</h4>
@@ -19,8 +19,7 @@
         </div>
       </div>
       </div>
-        <button> <a href="<%= question_path(q)%>">View Answers</a> </button>
-    <%end%>
+        <%= link_to'View Answers',question_url(q) %>
+    <%end%>w
   </div>
   </div>
-
