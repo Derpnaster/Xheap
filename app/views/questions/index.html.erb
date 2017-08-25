@@ -1,0 +1,16 @@
+<% @questions.each do |q| %>
+    <div class="media">
+      <div class="lead well">
+        <div class="media-left media-top">
+          <img class="media-object" src= "<%= q.gravatar %>" >
+
+          <div class="media-body">
+            <h4 class="media-heading"><%= q.username%> asked:</h4>
+            <div><%=time_ago_in_words q.created_at %> ago</div>
+            <%= q.body%>
+          </div>
+        </div>
+      </div>
+      <%= link_to'View Answers',question_url(q) %>
+    </div>
+<%end%>

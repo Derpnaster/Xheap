@@ -11,6 +11,11 @@ class QuestionsController < ApplicationController
     redirect_to root_path
   end
 
+  def index
+
+    @questions = Question.order(created_at: :desc)
+  end
+
   private
 
   def question_params
