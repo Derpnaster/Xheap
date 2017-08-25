@@ -12,8 +12,12 @@ class QuestionsController < ApplicationController
   end
 
   def index
-
-    @questions = Question.order(created_at: :desc)
+    @questions = Question.all
+    if params[:search]
+      @questions = Question.search(params[:search]).order(created_at: :desc)
+    else
+      @questions = Question.all.order(created_at: :desc)
+    end
   end
 
   private

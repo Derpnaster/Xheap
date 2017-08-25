@@ -13,17 +13,27 @@
         <li><a href="/">Home</a></li>
         <li><a href='/about'>About</a></li>
         <li><a href="<%=questions_url %>">More Questions </a></li>
-        <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-question-modal">
+        <li>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-question-modal">
          Ask Something
-        </button></li>
+        </button>
+        </li>
         <% if current_user %>
-            <li> <a href="<%= profile_path %>"> Logged in as <%= current_user.username %>.</a></li>
+            <li class ="mavbar-right"> <a href="<%= profile_path %>"> Logged in as <%= current_user.username %>.</a></li>
             <li> <p>  </p></li>
             <li>  <%= link_to "Log Out", logout_path %> </li>
           <% else %>
               <li> <%= link_to "Sign Up", signup_path %> </li>
               <li> <%= link_to "Log In", login_path %> </li>
           <% end %>
+        <li><p>  </p></li>
+
+        <li class="navbar-right">
+          <%= form_tag(questions_path, :method => "get", id: "search-form") do %>
+              <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+              <%= submit_tag "Search" %>
+          <% end %>
+        </li>
       </ul>
     </div>
   </div><!--/.nav-collapse -->
