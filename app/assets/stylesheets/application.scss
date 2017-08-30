@@ -20,6 +20,16 @@ body{
 
 }
 
+h1{
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+p{
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
 .search {
   margin-top: 10px;
   padding: 5px;
@@ -57,7 +67,8 @@ right: 15px;
 .login{
   text-align: center;
   .login-button{
-    text-align: right;
+    padding: 10px;
+    margin: 5px;
   }
 
 }
@@ -66,6 +77,10 @@ right: 15px;
   text-align: center;
   padding: 10px;
   margin: 10px;
+  .signup-btn{
+    padding: 10px;
+    margin: 5px;
+  }
 }
 
 .user-prof{
