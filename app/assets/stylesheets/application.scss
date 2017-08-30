@@ -15,20 +15,39 @@
 @import "bootstrap";
 
 body{
-  background-color: lightgrey;
+  background-color: darkgrey;
   font-family: Lato, sans-serif;
 
-  .navbar{
-    background-color: #2E2F30;
+}
 
-  }
-a{
-  color:  white;
+.nav-search{
+margin-top: 10px;
 
 }
-  li{
-    margin: 5px;
 
-  }
+.btn{
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+}
+
+.btn:hover {
+   background-color: #ffe30b;
+  border-color:#ffe30b;
+color: black;
+}
+
+
+footer{
+
+  position: relative;
+  bottom: 0px;
+right: 15px;
+
+  z-index: +1;
+}
+
+.modal {
+  background-color: #666666;
 
 }
