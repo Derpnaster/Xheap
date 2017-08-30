@@ -27,12 +27,7 @@
               <li class='user-login'> <%= link_to "Log In", login_path %> </li>
           <% end %>
 
-        <li class="navbar-right nav-search ">
-          <%= form_tag(questions_path, :method => "get", id: "search-form") do %>
-              <%= text_field_tag :secharch, params[:search], placeholder: "Search Posts" %>
-              <%= submit_tag "Search" %>
-          <% end %>
-        </li>
+
       </ul>
     </div>
   </div><!--/.nav-collapse -->

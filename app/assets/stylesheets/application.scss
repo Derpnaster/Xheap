@@ -20,15 +20,18 @@ body{
 
 }
 
-.nav-search{
-margin-top: 10px;
-
+.search {
+  margin-top: 10px;
+  padding: 5px;
+  text-align: right;
 }
 
 .btn{
   margin-top: 3px;
   margin-bottom: 3px;
-
+  background-color: #ffc20f;
+  border-color:#ffc21f;
+  color: black;
 }
 
 .btn:hover {
@@ -37,7 +40,11 @@ margin-top: 10px;
 color: black;
 }
 
-
+.btn:focus{
+  background-color: #ffc20f;
+  border-color:#ffc21f;
+  color: black;
+}
 footer{
 
   position: relative;
@@ -47,7 +54,3 @@ right: 15px;
   z-index: +1;
 }
 
-.modal {
-  background-color: #666666;
-
-}
